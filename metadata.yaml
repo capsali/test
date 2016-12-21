@@ -1,0 +1,19 @@
+name: jenkins-slave-win
+summary: "jenkins-slave for Windows"
+maintainers: [ "Mihai Gheorghe <mgheorghe@cloudbasesolutions.com>" ]
+description: |
+  Jenkins-slave for Windows
+tags:
+  - jenkins-slave
+  - windows
+series:
+  - win2012
+  - win2012r2
+  - win2012hv
+  - win2012hvr2
+  - win2016
+  - win2016nano
+subordinate: false
+provides:
+  slave:
+    interface: jenkins-slave

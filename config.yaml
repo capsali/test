@@ -1,0 +1,15 @@
+options:
+  java-url:
+    type: string
+    default: "http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jre-8u101-windows-x64.exe"
+    description: "URL for the java installer"
+  labels:
+    type: string
+    description: "Label for the slave node. If not set it will be automatically set as OS version"
+  executors:
+    type: int
+    description: "Number of executors. If no value is set then it defaults to the number of the slaves CPU cores."
+  force-redownload:
+    type: boolean
+    default: false
+    description: "Force redownloading slave.jar file from master"
